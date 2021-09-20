@@ -47,7 +47,7 @@ export default defineComponent({
 
 <style lang="stylus" scoped>
 .search-box
-  .layout-flex(center, normal);
+  layout-flex(center, normal);
   flex-wrap: nowrap;
   padding: 0 10px;
   background: $color-white;

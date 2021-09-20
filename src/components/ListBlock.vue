@@ -67,7 +67,7 @@ export default defineComponent({
 
     // 点击查看详情
     const selectItem = (id: string) => {
-      router.push(`/move/${id}`);
+      router.push(`/movie/${id}`);
     };
 
     return { selectItem, goMore };

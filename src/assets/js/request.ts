@@ -39,11 +39,13 @@ function useRequest<T>(
   url: string | ComputedRef<string>,
   config?: Partial<RequestConfig<T>>
 ): ReturnResult<T>;
+
 function useRequest<T>(
   url: string | ComputedRef<string>,
   params?: ComputedRef<RequestParams>,
   config?: Partial<RequestConfig<T>>
 ): ReturnResult<T>;
+
 function useRequest<T>(...args: any[]): ReturnResult<T> {
   let _url: { value: string };
   let _params: ComputedRef<RequestParams> | undefined;
